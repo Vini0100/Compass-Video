@@ -17,7 +17,8 @@ const LoginWithTMDB: FunctionComponent<Props> = ({ children }) => {
       })
       .then((response) => {
         localStorage.setItem("request_token", response.data.request_token);
-        window.location.href = `https://www.themoviedb.org/authenticate/${response.data?.request_token}?redirect_to=http://localhost:5173/home`;
+        const redirectUrl = window.location.origin + "/home";
+        window.location.href = `https://www.themoviedb.org/authenticate/${response.data?.request_token}?redirect_to=${redirectUrl}`;
       })
       .catch((error) => {
         console.error(error);
