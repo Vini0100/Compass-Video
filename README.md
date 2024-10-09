@@ -46,14 +46,19 @@ To get a local copy of the project up and running, follow these steps:
 3. Set up environment variables:
 
    - Obtain an API key from [TMDB](https://developer.themoviedb.org/docs/getting-started) and add it to your environment variables or `.env` file.
+   - Add your TMDB API key and account ID to the .env file as shown below:
+   ```bash
+    VITE_TMDB_API_KEY=your-api-key-here
+    VITE_TMDB_ACCOUNT_ID=your-account-id-here
+   ```
 
-4. Start the development server:
+5. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:5173` to view the application.
+6. Open your browser and visit `http://localhost:5173` to view the application.
 
 # Authors 👨‍💻👩‍💻
 
