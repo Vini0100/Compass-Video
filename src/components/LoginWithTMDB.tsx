@@ -17,7 +17,7 @@ const LoginWithTMDB: FunctionComponent<Props> = ({ children }) => {
       })
       .then((response) => {
         localStorage.setItem("request_token", response.data.request_token);
-        window.location.href = `https://www.themoviedb.org/authenticate/${response.data?.request_token}?redirect_to=http://localhost:5173/home`;
+        window.location.href = `https://www.themoviedb.org/authenticate/${response.data?.request_token}?redirect_to=http://compass-video.vercel.app/home`;
       })
       .catch((error) => {
         console.error(error);
