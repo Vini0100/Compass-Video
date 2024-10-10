@@ -6,7 +6,11 @@ const GuestTMDB = () => {
     localStorage.setItem("guest_session_id", sessionGuest.session_id);
     window.location.href = `${window.location.origin}/home`;
   };
-  return <span onClick={handleOnClickGuest}>Acesse como convidado</span>;
+  return (
+    <span className="cursor-pointer" onClick={handleOnClickGuest}>
+      Acesse como convidado
+    </span>
+  );
 };
 
 export default GuestTMDB;
