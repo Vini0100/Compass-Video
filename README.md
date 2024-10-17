@@ -34,7 +34,7 @@ To get a local copy of the project up and running, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/lucaslapazini95/proj2-sem8-pb.git
+   git clone https://github.com/Vini0100/Compass-Video.git
    ```
 
 2. Install dependencies:
